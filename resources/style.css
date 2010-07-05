@@ -1,8 +1,7 @@
 html, body { background-color: #1D1E22; }
 
-
 body > header { width: 100%; }
-body > header div { width: 960px; margin: 0 auto;}
+body > header div { width: 800px; margin: 0 auto;}
 body > header h1
 {
   border: 1px solid #800101;
@@ -40,7 +39,7 @@ body > header nav
 body > header nav ul
 {
   margin: 0 auto;
-  width: 960px;
+  width: 800px;
   height: 35px;
   list-style: none;
 }
@@ -61,7 +60,7 @@ body > header nav a:hover { color: #FFF; }
 #content
 {
   background: #FFF;
-  width: 932px;
+  width: 772px;
   margin: 0 auto;
   padding: 1em;
   margin-top: 5px;
