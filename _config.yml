@@ -1,0 +1,10 @@
+title: Redis To Go
+auto: true
+server: true
+server_port: 3000
+markdown: rdiscount
+paginate: 1
+permalink: /:year/:month/:day/:title
+safe: true
+lsi: false
+pygments: true

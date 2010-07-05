@@ -1,0 +1,16 @@
+---
+layout: main
+title: Home
+---
+
+{% for post in paginator.posts %}
+<article>
+  <header>
+    <h1>{{ post.title }}</h1>
+    <p class="byline">By {{ post.author }}</p>
+  </header>
+  <section>
+    {{ post.content }}
+  </section>
+</article>
+{% endfor %}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.title }} | {{ page.title }}</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <link href="/resources/reset.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="/resources/text.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/resources/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17299984-2']);
+      _gaq.push(['_setDomainName', '.redistogo.com']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>{{ site.title }}</h1>
+        <p>Blog</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/history.html">History</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content">
+      {{ content }}
+    </div>
+  </body>
+</html>

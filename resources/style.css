@@ -1,0 +1,111 @@
+html, body { background-color: #1D1E22; }
+
+
+body > header { width: 100%; }
+body > header div { width: 960px; margin: 0 auto;}
+body > header h1
+{
+  border: 1px solid #800101;
+  background-color: #A00;
+  color: #FFF;
+  font-size: 32px;
+  margin: 24px 24px 15px 0;
+  padding: 0 10px;
+  text-transform: uppercase;
+  float: left;
+}
+
+body > header p
+{
+  color: #555;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 35px;
+  float: left;
+}
+
+body > header nav
+{
+  color: #333;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  background-color: #131313;
+  border: 2px solid #212121;
+  display: block;
+}
+body > header nav ul
+{
+  margin: 0 auto;
+  width: 960px;
+  height: 35px;
+  list-style: none;
+}
+body > header nav ul li
+{
+  float: left;
+  margin: 0 15px 0 0;
+  height: 11px;
+  padding: 12px 0;
+}
+body > header nav a, header nav a:link
+{
+  color: #666;
+  text-decoration: none;
+}
+body > header nav a:hover { color: #FFF; }
+
+#content
+{
+  background: #FFF;
+  width: 932px;
+  margin: 0 auto;
+  padding: 1em;
+  margin-top: 5px;
+}
+
+
+article header h1 { float: left; }
+article header .byline { float: right; color: #666; font-style: italic; }
+article section { clear: both; display: block; }
+
+.code { font-family: monospace; }
+.center { margin-left: auto;  margin-right: auto; }
+pre {
+	background-color: #f6f6f6;
+	padding: 10px;
+	border: 1px solid gray;
+	overflow: auto; }
+blockquote {
+	margin-left:3em;
+	margin-right:3em; }
+	
+table {
+  border: 1px solid #666;
+  border-collapse: collapse;
+}
+table thead {
+  border-bottom: 1px solid #666;
+}
+table tr {
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+table td, table th {
+  padding: 0.2em 1em;
+}
+table tr td:first-child {
+  border-left: 1px solid #666;
+}
+
+a { color: #A00; }
+a:link, a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+
+
+
