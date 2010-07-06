@@ -1,11 +1,11 @@
-html, body { background-color: #1D1E22; }
+html, body { background: #1D1E22; }
 
 body > header { width: 100%; }
 body > header div { width: 800px; margin: 0 auto;}
 body > header h1
 {
   border: 1px solid #800101;
-  background-color: #A00;
+  background: #A00;
   color: #FFF;
   font-size: 32px;
   margin: 24px 24px 15px 0;
@@ -32,7 +32,7 @@ body > header nav
   padding: 0;
   text-transform: uppercase;
   font-size: 11px;
-  background-color: #131313;
+  background: #131313;
   border: 2px solid #212121;
   display: block;
 }
@@ -73,8 +73,10 @@ article section { clear: both; display: block; }
 
 .code { font-family: monospace; }
 .center { margin-left: auto;  margin-right: auto; }
+.left { float: left; }
+.right { float: right; }
 pre {
-	background-color: #f6f6f6;
+	background: #f6f6f6;
 	padding: 10px;
 	border: 1px solid gray;
 	overflow: auto; }
@@ -104,7 +106,19 @@ a { color: #A00; }
 a:link, a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+footer
+{
+  background: #1A1A1A;
+  border: 1px solid #212121;
+  font-size: 10px;
+  text-transform: uppercase;
+  width: 772px;
+  padding: 14px;
+  padding-bottom: 0;
+  height: 25px;
+  margin: 0 auto 5px auto;
+  color: #FFF;
+}
 
-
-
-
+footer section.right, footer section.right a
+{ color: #666; text-decoration: none; }
