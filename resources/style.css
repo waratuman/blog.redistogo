@@ -1,4 +1,4 @@
-html, body { background: #1D1E22; }
+html, body { background: #1F1F24; }
 
 body > header { width: 100%; }
 body > header div { width: 800px; margin: 0 auto;}
@@ -12,6 +12,7 @@ body > header h1
   padding: 0 10px;
   text-transform: uppercase;
   float: left;
+  text-align: center;
 }
 body > header h1 a:link, body > header h1 a:visited, body > header h1 a:link,
 body > header h1 a:hover
