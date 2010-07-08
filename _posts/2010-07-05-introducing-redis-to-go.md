@@ -24,9 +24,11 @@ to be used. Now using Redis in any project is dead simple.
 
 Redis To Go is currently offered as an add-on to [Heroku](http://heroku.com/).
 Deploying web applications has never been easier. Heroku has a vision of
-keeping deployment simple and pain free. The add-on program that Heroku offers
-is a great way to expand that vision and Redis To Go is proud to be a part of
-it.
+keeping deployment simple and pain free. The Heroku platform is robust and
+powerful. It is a deadly combination of simplicity and power. With once click
+Redis can be added to your application. The add-on program that Heroku offers
+is a great way to expand the vision of simple and powerful deployments and
+Redis To Go is proud to be a part of it.
 
 If you happen to not use Heroku, don't worry. In the coming weeks we will be
 adding the ability to provision Redis directly from the [Redis To Go](http://redistogo.com/)
