@@ -32,3 +32,5 @@ If you happen to not use Heroku, don't worry. In the coming weeks we will be
 adding the ability to provision Redis directly from the [Redis To Go](http://redistogo.com/)
 website. If you are interested either the Heroku beta program or the Redis To
 Go website alpha please fill out this [form](http://spreadsheets.google.com/viewform?formkey=dFZfTmZ1YWJpRzdSb3V1Wl9QaWVqcWc6MQ).
+
+Any feedback or questions? Email james at redistogo.
