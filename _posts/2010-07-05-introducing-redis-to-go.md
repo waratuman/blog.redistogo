@@ -7,7 +7,7 @@ layout: post
 
 [Redis](http://code.google.com/p/redis/), an advanced key-value store, has
 recently seen major uptake. Think of Redis as a database
-for data-structures. Its ability to store different data-structures 
+for data-structures. The ability to store different data-structures 
 gives Redis strength and flexibility. After discovering Redis, I find
 myself using it in nearly all of my projects.
 
@@ -35,4 +35,5 @@ website.
 If you are interested in either the Heroku beta program or the Redis To
 Go website alpha, please fill out this [form](http://spreadsheets.google.com/viewform?formkey=dFZfTmZ1YWJpRzdSb3V1Wl9QaWVqcWc6MQ).
 
-Any feedback or questions? Email james at redistogo.
+I am excited about this service and would love your feedback and questions.
+Email james at redistogo or leave you comments on the Hacker News [post].
