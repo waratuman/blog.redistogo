@@ -36,4 +36,4 @@ If you are interested in either the Heroku beta program or the Redis To
 Go website alpha, please fill out this [form](http://spreadsheets.google.com/viewform?formkey=dFZfTmZ1YWJpRzdSb3V1Wl9QaWVqcWc6MQ).
 
 I am excited about this service and would love your feedback and questions.
-Email james at redistogo or leave you comments on the Hacker News [post].
+Email james at redistogo or leave you comments on the Hacker News [post](http://news.ycombinator.com/item?id=1514921).
