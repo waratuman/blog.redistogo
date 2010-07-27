@@ -18,13 +18,15 @@ projects in which I was involved required data to be processed in near-real
 time. After fighting with Delayed Job for too long I tried Resque, a queuing
 system for Ruby based on Redis.
 
-One of the most significant gains for one of my applications was the ability
-to recover from a full data loss. When using Delayed Job, the recovery time
-was measuring in hours. Typically it would take 6 to 8 hours for the system
-to fully recover. After switching to Resque, the system was able to recover
-in under 30 minutes. That is a significant increase and the key was switching
-from Delayed Job to Resque. (To be fair there were other optimizations that
-were made but Resque had the most significant impact.)
+Delayed Job checks the queue every second. When you have 1 worker, that's 1
+request per second. This is fine for a few workers, but as you start to add
+more you're talking about a bigger and bigger load against your database
+just to check state. This is happening exactly when you don't want it - when
+you're trying to scale!  At FlightCaster we could have 400+ jobs running
+simultaneously to process data, The load on the database alone from 400 req/s
+for Delayed Job to get the next task off the queue would crush the database,
+making it impossible to run. With Resque all 400 jobs can run without any
+issues.
 
 Every single website and project that I have been involved has at one point
 required a queuing system.  No longer will I even touch Delayed Job, Resque
