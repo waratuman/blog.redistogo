@@ -34,8 +34,7 @@ has had such a significant impact and has such great performance as well as
 a built in interface for introspection into the queue.
 
 This tutorial is very similar to the systems that [FlightCaster](http://flightcaster.com/),
-[Juice In the City](http://www.juiceinthecity.com/), and even [Redis To Go](http://redistogo.com/)
-uses.
+and even [Redis To Go](http://redistogo.com/) uses.
 
 Enough with the context, lets get started.
 
