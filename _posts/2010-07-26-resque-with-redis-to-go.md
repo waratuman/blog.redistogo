@@ -221,5 +221,5 @@ The example app source code is located at [http://github.com/waratuman/cookie-mo
 ## Conclusion
 
 This should get you up and running with Resque and on your way to a scalable
-solution. If you have any question, either leave a comment in the Hacker News
-post or email james at redistogo.
+solution. If you have any question, either leave a comment in the [Hacker News
+post](http://news.ycombinator.com/item?id=1554641) or email james at redistogo.
