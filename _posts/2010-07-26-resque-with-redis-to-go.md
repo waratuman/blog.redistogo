@@ -49,7 +49,7 @@ Create the application:
     $ rails new cookie_monster
     $ cd cookie_monster
     
-Modify the Gemfile to include Resque.
+Modify the `Gemfile` to include Resque.
 
     source 'http://rubygems.org'
 
