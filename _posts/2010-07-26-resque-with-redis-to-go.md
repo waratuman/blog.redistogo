@@ -120,7 +120,7 @@ and return the request, leaving any work to be done outside of the request.
 
 ## Start a Worker
 
-Open `lib/tasks/resque.rb` and place the following inside.
+Open `lib/tasks/resque.rake` and place the following inside.
     
     require 'resque/tasks'
     
@@ -179,7 +179,7 @@ part of the beta program for access.
 
 The only adjustment that we need to make is to map the rake task `jobs:work`
 to `resque:work` and set the queues to watch. After making these changes the
-Heroku workers will work wonderfully. Open `lib/tasks/resque.rb` and replace
+Heroku workers will work wonderfully. Open `lib/tasks/resque.rake` and replace
 what is in there with the following:
 
     require 'resque/tasks'
