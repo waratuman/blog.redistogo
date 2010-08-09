@@ -6,7 +6,7 @@ layout: post
 
 [Rescue Scheduler](http://github.com/bvandenbos/resque-scheduler) is an
 extension to [Resque](http://github.com/defunkt/resque) that provides both
-scheduled and delayed jobs. This service can replace cron and bring the
+scheduled and delayed jobs. This service can replace [cron](http://en.wikipedia.org/wiki/Cron) and bring the
 ability to schedule task to execute at a certain time.
 
 This tutorial is based off the previous tutorial on [using Resque with Redis To
@@ -42,11 +42,10 @@ Install dependencies.
 # Configure Resque Scheduler
 
 Resque Scheduler run as a process. To run it we will end up calling `rake
-resque:scheduler`. Before that can happen the `lib/tasks/resque.rb` file will
-need to be updated to load these task. Added the following lines to the file:
+resque:scheduler`. Before that can happen the `lib/tasks/resque.rake` file will
+need to be updated to load these task. Added the following line to the file:
 
     require 'resque_scheduler/tasks'
-    task "resque:setup" => :environment
 
 Now you should be able to run `rake resque:scheduler`. Since the crontab for
 Resque Scheduler has not been set the process will schedule any jobs. It will
@@ -66,19 +65,20 @@ Lets go ahead and create the cron tab for Resque Scheduler. Create the file
       args: penut-butter and jelly sandwich
       description: Lunch
     dinner:
-      cron 0 6 * * *
+      cron: 0 6 * * *
       class: Eat
       args: Steak
       description: Dinner
     midnight_snack:
-      cron 0 0 * * *
+      cron: 0 0 * * *
       class: Eat
       args: Milk & Cookies
       description: Midnight Snack
 
 We still need to load the schedule when we initialize Resque. To do this open
-`config/initializers/resque.rb` and add the following line.
-
+`config/initializers/resque.rb` and add the following lines.
+  
+    require 'resque_scheduler'
     Resque.schedule = YAML.load_file("#{Rails.root}/config/resque_schedule.yml")
 
 # Start the Scheduler Process
@@ -96,3 +96,25 @@ one would pick up the work. An alternative solution would have been to have a
 schedule job put delayed jobs on the queue to run at the specified times. Then
 if the scheduler process died the jobs would be performed once the process was
 up again.
+
+## Delayed Jobs
+
+To schedule a job to take place after a certain amount of time is almost as
+easy as enqueuing a job. Simple specify the time you want to have the Job run
+at.
+
+    Resque.enqueue_at(2.days.from_now, Eat, 'leftovers')
+
+## Web Additions
+
+Resque scheduler also extends the Resque web UI, so you get a great looking
+interface from which you can see delayed jobs and scheduled jobs.
+
+<img src="http://img.skitch.com/20100111-km2f5gmtpbq23enpujbruj6mgk.png" alt="Resque Scheduler Web Extentsion" style="width: 100%;" />
+<img src="http://img.skitch.com/20100111-ne4fcqtc5emkcuwc5qtais2kwx.jpg" alt="Resque Scheduler Web Extentsion" style="width: 100%;" />
+
+## Conclusion
+
+[Rescue Scheduler](http://github.com/bvandenbos/resque-scheduler) offers a simple
+and easy way to added scheduling abilities to any queueing system and is well
+worth the move from cron.
