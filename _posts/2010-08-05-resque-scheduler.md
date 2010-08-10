@@ -110,8 +110,9 @@ at.
 Resque scheduler also extends the Resque web UI, so you get a great looking
 interface from which you can see delayed jobs and scheduled jobs.
 
-<img src="http://img.skitch.com/20100111-km2f5gmtpbq23enpujbruj6mgk.png" alt="Resque Scheduler Web Extentsion" style="width: 100%;" />
-<img src="http://img.skitch.com/20100111-ne4fcqtc5emkcuwc5qtais2kwx.jpg" alt="Resque Scheduler Web Extentsion" style="width: 100%;" />
+<img src="/resources/images/scheduled_jobs.png" alt="Resque Scheduler Web Extentsion" style="width: 100%;" />
+
+<img src="/resources/images/delayed_jobs.png" alt="Resque Scheduler Web Extentsion" style="width: 100%;" />
 
 ## Conclusion
 
