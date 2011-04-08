@@ -10,7 +10,7 @@ self-hosted. Our secondary notification systems do not check as often, but did
 alert us to the issue.
 
 Once we had been alerted that the server was unresponsive we attempted to reboot
-the server, but were unable to get the server to reboot. As a result we removed ABS
+the server, but were unable to get the server to reboot. As a result we removed EBS
 volumes, brought up another instance to restore server to affect Redis instances. 
 
 As a result we are adding more external monitoring services that that will
